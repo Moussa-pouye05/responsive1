@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="content">
+        <header>
+            <div class="bloc-gauche">
+                <div class="fonce"></div>
+                <div class="grille"></div>
+            </div>
+            <div class="bloc-droite" id="right-bloc">
+                
+                <ul id="right">
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-regular fa-house"></i></span>
+                             <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-regular fa-star"></i></span>
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-regular fa-plus-square"></i></span>
+                            <span>Add new</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-regular fa-comment"></i></span>
+                            <span>Chat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-regular fa-magnifying-glass"></i></span>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="menu-list" onClick="toggleForm()">
+                <i class="fa-solid menu fa-bars"></i>
+            </div>
+            <script>
+                let right = document.getElementById('right-bloc');
+                right.style.right = "0px";
+
+                function toggleForm(){
+                    if(right.style.maxHeight == "0px"){
+                        right.style.maxHeight = "380px"
+                    }else{
+                        right.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+        </header>
+        <main>
+            <h1>Bottom Navigation</h1>
+            <div class="bottom-nav">
+                <div class="nav-item"><span>Direct access To specific Section</span></div>
+                <div class="nav-item"><span>Direct access To specific Section</span></div>
+                <div class="nav-item"><span>Direct access To specific Section</span></div>
+                <div class="nav-item"><span>Direct access To specific Section</span></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

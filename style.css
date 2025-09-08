@@ -45,13 +45,14 @@ header .menu{
 .bloc-droite{
     margin:auto;
     width: 380px;
-    height: 120px;
+    max-height: 320px;
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    top: 110px;
 }
 .bloc-droite ul{
     list-style: none;
@@ -61,7 +62,7 @@ header .menu{
     height: 50%;
     align-items: flex-end;
     justify-content: space-around;
-     
+     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 0 0 10px 10px;
 }
 .bloc-droite ul li a{
@@ -115,6 +116,7 @@ h1{
     text-align: center;
     padding: 25px 20px 20px 20px;
     font-size: 30px;
+    margin-top: 90px;
 }
 @media screen and (max-width: 768px){
     .container{

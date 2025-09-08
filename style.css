@@ -126,7 +126,7 @@ h1{
         align-items:center;
         justify-content:center;
         width: 140px;
-        height: 400px;
+        height: 450px;
         position:absolute;
         top:50px;
         right:0px;
@@ -154,6 +154,9 @@ h1{
         padding:10px;
         font-size:17px;
     }
+    .bloc-droite ul li a:hover{
+        border: none;
+    }
     .bottom-nav{
         display:flex;
         justify-content: space-around;
@@ -163,7 +166,7 @@ h1{
     }
     .nav-item{
         width:130px;
-        height:130px;
+        height:145px;
         margin:5px;
     }
     .nav-items span{
